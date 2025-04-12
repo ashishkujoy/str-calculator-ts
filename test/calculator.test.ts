@@ -7,3 +7,7 @@ test("sum of empty string", () => {
 test("sum of single number", () => {
   expect(add("2")).toBe(2);
 });
+
+test("sum of two comma separated numbers", () => {
+  expect(add("1,2")).toBe(3);
+});
