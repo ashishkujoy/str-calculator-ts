@@ -5,9 +5,9 @@ const parseNumbers = (numberStr: string) => {
 }
 
 const validateNumbers = (numbers: number[]) => {
-  const negativeNumber = numbers.find(number => number < 0);
-  if(negativeNumber !== undefined) {
-    throw new Error(`negative numbers not allowed ${negativeNumber}`)
+  const negativeNumbers = numbers.filter(number => number < 0);
+  if(negativeNumbers.length !== 0) {
+    throw new Error(`negative numbers not allowed ${negativeNumbers.join(",")}`)
   }
 }
 
