@@ -19,3 +19,7 @@ test("sum of two multiple comma separated numbers", () => {
 test("sum of numbers containing new line", () => {
   expect(add("1,2,3\n4,5")).toBe(15);
 });
+
+test("sum of numbers containing single negative number", () => {
+  expect(() => add("1,-2,3")).toThrow("negative numbers not allowed -2");
+});
