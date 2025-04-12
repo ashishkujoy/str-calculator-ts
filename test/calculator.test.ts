@@ -31,3 +31,7 @@ test("sum of numbers containing multiple negative number", () => {
 test("sum of numbers containing custom delimiter", () => {
   expect(add("//$\n1$2$3$4")).toBe(10);
 });
+
+test("sum of numbers containing multi char custom delimiter", () => {
+  expect(add("//$#\n1$#2$#3$#4")).toBe(10);
+});
