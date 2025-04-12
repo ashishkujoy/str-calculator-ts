@@ -15,3 +15,7 @@ test("sum of two comma separated numbers", () => {
 test("sum of two multiple comma separated numbers", () => {
   expect(add("1,2,3,4,5")).toBe(15);
 });
+
+test("sum of numbers containing new line", () => {
+  expect(add("1,2,3\n4,5")).toBe(15);
+});
