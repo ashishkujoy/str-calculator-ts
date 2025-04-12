@@ -1,0 +1,25 @@
+{
+  "name": "str-calculator",
+  "version": "0.0.1",
+  "description": "Typescript solution for Incubyte String Calculator TDD kata https://blog.incubyte.co/blog/tdd-assessment/",
+  "main": "calculator.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "TDD",
+    "Typescript",
+    "String",
+    "Calculator"
+  ],
+  "author": "ashishkujoy",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.14.1",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.3.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
