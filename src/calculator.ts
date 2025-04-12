@@ -1,3 +1,3 @@
 export const add = (numberStr: string) => {
-  return 0;
+  return numberStr.length === 0 ? 0 : Number(numberStr);
 }
